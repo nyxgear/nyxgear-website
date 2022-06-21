@@ -3,6 +3,7 @@ languageCode: en-us
 title: nyxgear
 theme: PaperMod
 params:
+  # env: production 
   defaultTheme: dark
   DateFormat: "2006-01-02"
   ShowShareButtons: true
@@ -11,11 +12,18 @@ params:
     Content: Can be Info, links, about...
 
   socialIcons: # optional
-    - name: "<platform>"
-      url: "<link>"
-    - name: "<platform 2>"
-      url: "<link2>"
+    - name: "github"
+      url: "https://github.com/nyxgear"
+    - name: "gitlab"
+      url: "https://gitlab.com/nyxgear"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/stefano-cilloni/"
+
+  ShowCodeCopyButtons: true
   ShowReadingTime: true
+  analytics:
+    google:
+      SiteVerificationTag: "UA-47276148-1"
 
 
   fuseOpts:
