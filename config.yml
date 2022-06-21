@@ -1,7 +1,7 @@
 baseURL: https://nyxgear.com
 languageCode: en-us
 title: nyxgear
-theme: "PaperMod"
+theme: PaperMod
 params:
   defaultTheme: dark
   DateFormat: "2006-01-02"
@@ -17,11 +17,6 @@ params:
       url: "<link2>"
   ShowReadingTime: true
 
-  outputs:
-    home:
-      - HTML
-      - RSS
-      - JSON # is necessary for search
 
   fuseOpts:
     isCaseSensitive: false
@@ -29,8 +24,14 @@ params:
     location: 0
     distance: 1000
     threshold: 0.4
-    minMatchCharLength: 0
+    minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary for search
 
 menu:
   main:
