@@ -2,7 +2,8 @@ name: Hugo build, deploy to Netlify
 
 on:
   push:
-  pull_request:
+    branches:    
+      - main
 
 jobs:
   deploy:
@@ -34,8 +35,8 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "GitHub Actions deploying commit: ${{ github.event.head_commit.message }}"
           enable-pull-request-comment: false
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
+          enable-commit-comment: false
+          overwrites-pull-request-comment: false
         timeout-minutes: 1
 
       - name: Dump GitHub context
