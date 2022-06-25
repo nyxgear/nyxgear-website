@@ -8,14 +8,16 @@ params:
   DateFormat: "2006-01-02"
   ShowShareButtons: true
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
+    Title: Hi, I'm Stefano
+    Content: Software Engineer automating stuff on Linux with git, Docker, and K8S 
 
   socialIcons: # optional
     - name: "github"
       url: "https://github.com/nyxgear"
     - name: "gitlab"
       url: "https://gitlab.com/nyxgear"
+    - name: "twitter"
+      url: "https://twitter.com/nyxgear"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/stefano-cilloni/"
 
