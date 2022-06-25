@@ -22,6 +22,8 @@ jobs:
           hugo-version: '0.93.2'
 
       - name: Hugo build
+        env:
+          HUGO_ENV: production
         run: hugo --minify
 
       - name: Deploy to Netlify
@@ -38,4 +40,3 @@ jobs:
           enable-commit-comment: false
           overwrites-pull-request-comment: false
         timeout-minutes: 1
-
