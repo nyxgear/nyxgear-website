@@ -32,6 +32,21 @@ params:
     threshold: 0.4
     minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content"]
+  
+  # posts' params
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowRssButtonInSectionTermList: true
+
+  showToc: true
+  TocOpen: true
+  UseHugoToc: true
+
+  editPost:
+    URL: "https://github.com/nyxgear/nyxgear-website/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 
 googleAnalytics: UA-47276148-1
 
