@@ -4,7 +4,7 @@ title: nyxgear
 theme: PaperMod
 params:
   # env: production 
-  defaultTheme: dark
+  defaultTheme: light
   DateFormat: "2006-01-02"
   ShowShareButtons: true
   homeInfoParams:
@@ -35,6 +35,9 @@ params:
     minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content"]
 
+permalinks:
+  posts: /:year/:month/:title/
+
 outputs:
   home:
     - HTML
@@ -47,10 +50,13 @@ menu:
     #   name: ~/categories
     #   url: /categories/
     #   weight: 10
+    - identifier: home
+      name: cd $HOME
+      url: /
+      weight: 1
     - identifier: about
       name: $ whoami
       url: /about/
-      weight: 10
     - identifier: archives
       name: ~/archives
       url: /archives/

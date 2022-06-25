@@ -1,4 +1,4 @@
-name: Hugo build, deploy to Netlify
+name: Hugo build + Netlify deploy
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.99.1'
+          hugo-version: '0.93.2'
 
       - name: Hugo build
         run: hugo --minify
@@ -39,6 +39,3 @@ jobs:
           overwrites-pull-request-comment: false
         timeout-minutes: 1
 
-      - name: Dump GitHub context
-        id: github_context_step
-        run: echo '${{ toJSON(github) }}'
