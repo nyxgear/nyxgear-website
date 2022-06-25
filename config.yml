@@ -3,7 +3,7 @@ languageCode: en-us
 title: nyxgear
 theme: PaperMod
 params:
-  # env: production 
+  env: production
   defaultTheme: light
   DateFormat: "2006-01-02"
   ShowShareButtons: true
@@ -23,10 +23,6 @@ params:
 
   ShowCodeCopyButtons: true
   ShowReadingTime: true
-  analytics:
-    google:
-      SiteVerificationTag: "UA-47276148-1"
-
 
   fuseOpts:
     isCaseSensitive: false
@@ -36,6 +32,8 @@ params:
     threshold: 0.4
     minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content"]
+
+googleAnalytics: UA-47276148-1
 
 permalinks:
   posts: /:year/:month/:title/
